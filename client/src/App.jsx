@@ -18,11 +18,11 @@ function App() {
 
     try {
       // Fetch Image
-      const imageResponse = await axios.post('http://localhost:5000/api/image', { text: inputText });
+      const imageResponse = await axios.post('/api/image', { text: inputText });
       setImageUrl(imageResponse.data.image);
 
       // Fetch Audio
-      // const audioResponse = await axios.post('http://localhost:5000/api/audio', { text: inputText });
+      // const audioResponse = await axios.post('/api/audio', { text: inputText });
       // setAudioUrl(audioResponse.data.audio);
 
     } catch (err) {
